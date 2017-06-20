@@ -495,6 +495,11 @@
         height: 20px;
         cursor: pointer;
     }
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
 
     .selectcolor {
         margin: 50px;
@@ -708,4 +713,19 @@
     .progress {
         width: 103%;
     }
+}
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

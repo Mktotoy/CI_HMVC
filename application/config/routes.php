@@ -49,6 +49,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'login';
+$route['default_controller'] = 'User/Login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['(?i)Question'] = 'admin/Question';
+$route['(?i)Question/(:any)'] = 'admin/Question/$1';
+$route['(?i)Question/(:any)/(:num)'] = 'admin/Question/$1/$2';
+
+$route['(?i)Question_line'] = 'admin/Question_line';
+$route['(?i)Question_line/(:any)'] = 'admin/Question_line/$1';
+$route['(?i)Question_line/(:any)/(:num)'] = 'admin/Question_line/$1/$2';
+
+$route['(?i)Createur'] = 'admin/Createur';
+$route['(?i)Createur/(:any)'] = 'admin/Createur/$1';
+$route['(?i)Createur/(:any)/(:num)'] = 'admin/Createur/$1/$2';
+
+$route['(?i)Moderation'] = 'admin/Moderation';
+$route['(?i)Moderation/(:any)'] = 'admin/Moderation/$1';
+$route['(?i)Moderation/(:any)/(:num)'] = 'admin/Moderation/$1/$2';
+
+$route['(?i)Categorie'] = 'admin/Categorie';
+$route['(?i)Categorie/(:any)'] = 'admin/Categorie/$1';
+$route['(?i)Categorie/(:any)/(:any)'] = 'admin/Categorie/$1/$2';
+
+$route['(?i)Badge'] = 'badges/Badge';
+$route['(?i)Badge/(:any)'] = 'badges/Badge/$1';
+$route['(?i)Badge/(:any)/(:num)'] = 'badges/Badge/$1/$2';
+
+$route['(?i)Video_Categorie'] = 'admin/Video_Categorie';
+$route['(?i)Video_Categorie/(:any)'] = 'admin/Video_Categorie/$1';
+$route['(?i)Video_Categorie/(:any)/(:num)'] = 'admin/Video_Categorie/$1/$2';
+
+$route['(?i)User_userrole'] = 'admin/User_userrole';
+$route['(?i)User_userrole/(:any)'] = 'admin/User_userrole/$1';
+$route['(?i)User_userrole/(:any)/(:num)'] = 'admin/User_userrole/$1/$2';
+
+$route['(?i)Channel'] = 'admin/Channel';
+$route['(?i)Channel/(:any)'] = 'admin/Channel/$1';
+$route['(?i)Channel/(:any)/(:any)'] = 'admin/Channel/$1/$2';
+
+$route['(?i)Videos'] = 'admin/Videos';
+$route['(?i)Videos/(:any)'] = 'admin/Videos/$1';
+$route['(?i)Videos/(:any)/(:any)'] = 'admin/Videos/$1/$2';

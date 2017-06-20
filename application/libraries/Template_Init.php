@@ -24,9 +24,9 @@ class Template_Init
         $this->var['js'] = array();
 
 
-        $this->CI->template->var['theme']='default';
-        $this->CI->template->var['icon']="";/*img_url('handling_logo.png');*/
-        $this->CI->template->var['logo'] = ""; /*img_url('handling_logo.png');*/
+        //$this->CI->template->var['theme']='default';
+        $this->CI->template->var['icon']=img_url('logo.png');
+        $this->CI->template->var['logo'] = img_url('logo.png');
         //	Le titre est composé du nom de la méthode et du nom du contréleur
         //	La fonction ucfirst permet d'ajouter une majuscule
         $this->CI->template->var['titre'] = ucfirst($this->CI->router->fetch_method()) . ' - ' . ucfirst($this->CI->router->fetch_class());
@@ -34,19 +34,68 @@ class Template_Init
         // Initialiser les feuilles de style
         // Initialiser les feuilles de style
         $this->CI->template->ajouter_css('bootstrap/css/bootstrap.min');
-        $this->CI->template->ajouter_css('css/template/metisMenu.min');
-        $this->CI->template->ajouter_css('css/template/sbadmin2');
         $this->CI->template->ajouter_css('css/style');
-        $this->CI->template->ajouter_css('css/font-awesome.min');
+        $this->CI->template->ajouter_css('font-awesome-4.7.0/css/font-awesome.min');
         $this->CI->template->ajouter_css('datatables/dataTables.bootstrap');
+        $this->CI->template->ajouter_css('datatables/full_dataTables.min');
 
+        $this->CI->load->model('admin/Categorie_model','Categorie_model');
+        $categories = $this->CI->Categorie_model->get_all();
+
+        $this->CI->template->var['left_navigation'] = '
+                                <li><a><i class="fa fa-windows"></i> Par Chaines <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">';
+        foreach ($categories as $cat)
+            $this->CI->template->var['left_navigation'] .='<li><a href="'.site_url("Plateform/theme_channels").'/'.$cat->name.'">'.$cat->icon.' '.$cat->name.'</a></li>';
+        $this->CI->template->var['left_navigation'] .='</ul>
+                                </li>
+                                    ';
+        
+        if(isset($this->CI->session->userdata('user')['role']) && $this->CI->session->userdata('user')['role'] == 2){
+            $this->CI->template->var['left_navigation'] .= '
+            <li><a><i class="fa fa-wrench"></i> Admin <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="'.site_url("Createur").'"><i class="fa fa-table"></i>Createur</a></li>
+                    <li><a href="'.site_url("Moderation").'"><i class="fa fa-table"></i>Moderation</a></li>  
+                    <li><a href="'.site_url("Categorie").'"><i class="fa fa-table"></i>Categorie</a></li>  
+                    <li><a href="'.site_url("Question").'"><i class="fa fa-table"></i>Question</a></li>  
+                    <li><a href="'.site_url("Question_line").'"><i class="fa fa-table"></i>Question_line</a></li>  
+                    <li><a href="'.site_url("Video_categorie").'"><i class="fa fa-table"></i>Video_categorie</a></li>  
+                    <li><a href="'.site_url("Videos").'"><i class="fa fa-table"></i>Videos</a></li>  
+                    <li><a href="'.site_url("Channel").'"><i class="fa fa-table"></i>Channel</a></li>  
+                    
+                    <li><a href="'.site_url("Badge").'"><i class="fa fa-table"></i>Badge</a></li>  
+                                    
+                                    
+                </ul>
+            </li> ';
+
+            $this->CI->template->var['top_navigation'] = '
+                            <li><a href="'.site_url('User/profile').'"> Profile</a></li>                             
+                            <li><a href="">Help</a></li>
+                            <li><a href="'.site_url('User/logout').'" <i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                           ';
+        }
+
+
+       /* $this->CI->template->var['top_navigation'] = '
+                            <li><a href="'.site_url('User/profile').'"> Profile</a></li>
+                                <li>
+                                    <a href="">
+                                        <span class="badge bg-red pull-right">50%</span>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li><a href="">Help</a></li>
+                                <li><a href="'.site_url('User/logout').'" <i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                           ';
         /*$this->CI->load->library('translate');
         $this->CI->load->library('navigation');
         $this->CI->load->model('CRUD_Usergroupnavigation_model');
         //$this->var['left_navigation'] = $this->CI->navigation->generateNav_fromName('LeftAdmin');
 
         if(!empty($this->CI->session->userdata('usergroup'))){
-            $res=$this->CI->CRUD_Usergroupnavigation_model->get_by_col_array('IDUserGroup',$this->CI->session->userdata('usergroup'));
+            $res=$this->CI->CRU D_Usergroupnavigation_model->get_by_col_array('IDUserGroup',$this->CI->session->userdata('usergroup'));
 
             foreach($res as $line){
                 if($line['Position'] == "top"){
@@ -116,10 +165,9 @@ class Template_Init
 
         $this->CI->template->ajouter_js('js/jquery-1.11.2.min');
         $this->CI->template->ajouter_js('bootstrap/js/bootstrap.min');
-        $this->CI->template->ajouter_js('js/metisMenu.min');
-        $this->CI->template->ajouter_js('js/sb-admin-2');
         $this->CI->template->ajouter_js('js/highcharts');
         $this->CI->template->ajouter_js('js/myscript');
+        $this->CI->template->ajouter_js('datatables/full_dataTables.min');
         $this->CI->template->ajouter_js('js/ajax_functions');
 
 
@@ -132,3 +180,5 @@ class Template_Init
 
     }
 }
+
+

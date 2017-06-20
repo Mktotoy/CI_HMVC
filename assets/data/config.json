@@ -1,0 +1,290 @@
+{
+	"channels"	: {	
+		"911 Avocats" 			: {
+			"id" : "UC1g4lZctFqTpZDrJEiw9Qug",
+			"type": [
+				"Droit"
+			]
+		}	,
+		"Mister Geopolitix"		: {
+			"id" : "UCX9lsdsTKfTi1eqoyL-RS-Q", 
+			"type": [
+				"Culture"
+			]
+		}	,
+		"Ducky"					: {
+			"id" : "UCHkH8tkuNLLjKu8u0Dc-t-A", 
+			"type": [
+				"Histoire"
+			]
+		}	,
+		"HugoDécrypte"			: {
+			"id": "UCAcAnMF0OrCtUep3Y4M-ZPw", 
+			"type": [
+				"Culture"
+			]
+		}	,
+		"Max Bird"				: {
+			"id": "UC-4WUubuVGowG_R7gdgesPA", 
+			"type": [
+				"Culture"
+			]
+		}	,
+		"Miss Book"				: {
+			"id": "UC_9Z28lA28JxAgFv-m4_nlw", 
+			"type": [
+				"Littérature"
+			]
+		}	, 
+		"Data Geule"			: {
+			"id": "UCm5wThREh298TkK8hCT9HuA", 
+			"type": [
+				"Actualité"
+			]
+		}, 
+
+		"FabienOlicard"			: {
+			"id": "UCTafEJoRl5myC8A50plIrng", 
+			"type": [
+				"Mentalisme"
+			]
+		}, 
+
+		"Heu?reka"			: {
+			"id": "UC7sXGI8p8PvKosLWagkK9wQ", 
+			"type": [
+				"Économie"
+			]
+		}, 
+		"Axolot"			: {
+			"id": "UC2_OG1L8DLTzQ7UrZVOk7OA", 
+			"type": [
+				"Culture"
+			]
+		}, 
+		"Confessions d'Histoire"			: {
+			"id": "UCzj9-ZfpJ74vYv1RZzAWTVg", 
+			"type": [
+				"Histoire"
+			]
+		}, 
+		"Cyrus North"			: {
+			"id": "UCah8C0gmLkdtvsy0b2jrjrw", 
+			"type": [
+				"Philosophie"
+			]
+		}, 
+		"Dans Ton Corpps"			: {
+			"id": "UCOchT7ZJ4TXe3stdLW1Sfxw", 
+			"type": [
+				"Santé" 
+			]
+		}, 
+		"DanyCaligula"			: {
+			"id": "UCxJka_qnTVquoIL-PQV5POg", 
+			"type": [
+				"Culture"
+			]
+		}, 
+		"DirtyBiology"			: {
+			"id": "UCtqICqGbPSbTN09K1_7VZ3Q", 
+			"type": [
+				"Science"
+			]
+		}, 
+		"Dr Nozman"			: {
+			"id": "UCWnfDPdZw6A23UtuBpYBbAg", 
+			"type": [
+				"Science"
+			]
+		}, 
+		"Experimentboy"			: {
+			"id": "UCvGag7MyHR8H9oRm9iL9Ifw", 
+			"type": [
+				"Science"
+			]
+		},
+
+		"Florence Porcel"			: {
+			"id": "UC9HapjjoLqdDNwKEWQRaiyA", 
+			"type": [
+				"Science"
+			]
+		},
+
+		"horizon-gull"			: {
+			"id": "UCGeFgMJfWclTWuPw8Ok5FUQ", 
+			"type": [
+				"Sociologie"
+			]
+		},
+
+		"Hygiène Mentale"			: {
+			"id": "UCMFcMhePnH4onVHt2-ItPZw", 
+			"type": [
+				"Esprit critique"
+			]
+		}, 
+
+		"Incroyables Expériences"			: {
+			"id": "UC_GlthPB9gzdxfkTTEIVxMA", 
+			"type": [
+				"Expériences"
+			]
+		}, 
+
+		"La Brigade du Livre"			: {
+			"id": "UCO-YDXoZJNVJFmF1UJ17rEw", 
+			"type": [
+				"Littérature"
+			]
+		}, 
+
+		"La Minute Science"			: {
+			"id": "UCwBn4dgV3kxzvcCKN3TbQOQ", 
+			"type": [
+				"Science"
+			]
+		}, 
+
+		"La statistique expliquée à mon chat"			: {
+			"id": "UCWty1tzwZW_ZNSp5GVGteaA", 
+			"type": [
+				"Mathématiques"
+			]
+		}, 
+
+		"Le Fossoyeur de Films"			: {
+			"id": "UCwbV8cTR4yBgFdfa_BXV2OA", 
+			"type": [
+				"Cinéma" 
+			]
+		}, 
+
+		"Le Marque-Page"			: {
+			"id": "UCJgYXYDJV9UZfxMcKuvc-0g", 
+			"type": [
+				"Littérature" 
+			]
+		}, 
+
+		"Les Revues du Monde"			: {
+			"id": "UCnf0fDz1vTYW-sl36wbVMbg", 
+			"type": [
+				"Histoire"
+			]
+		}, 
+
+		"Linguisticae"			: {
+			"id": "UCofQxJWd4qkqc7ZgaLkZfcw", 
+			"type": [
+				"Langues" 
+			]
+		}, 
+
+		"Mickaël Launay"			: {
+			"id": "UC4PasDd25MXqlXBogBw9CAg", 
+			"type": [
+				"Mathématiques"
+			]
+		}, 
+
+		"NEXUS VI"			: {
+			"id": "UC8-UThnwzBI5ApzVG4MY7VQ", 
+			"type": [
+				"Science-fiction"
+			]
+		}, 
+
+		"Nota Bene"			: {
+			"id": "UCP46_MXP_WG_auH88FnfS1A", 
+			"type": [
+				"Histoire"
+			]
+		}, 
+
+		"OLD VHS"			: {
+			"id": "UCApr8sdJ1QkbQq4k64sZNLw", 
+			"type": [
+				"Cinéma"
+			]
+		}, 
+
+		"Parlons peu... Parlons Cul !"			: {
+			"id": "UChMBRboapaPi9fNnr0O76sg", 
+			"type": [
+				"Sexologie"
+			]
+		}, 
+
+		"Pour La Petite Histoire"			: {
+			"id": "UCFAR8XqMHTSB32e7okK0DWw", 
+			"type": [
+				"Histoire"
+			]
+		}, 
+
+		"Révisons nos Classiques"			: {
+			"id": "UCZHPwKyeypWwU8SNJSzQhCw", 
+			"type": [
+				"Musique"
+			]
+		}, 
+
+		"ScienceEtonnante"			: {
+			"id": "UCaNlbnghtwlsGF-KzAFThqA", 
+			"type": [
+				"Science"
+			]
+		}, 
+
+		"Usul2000"			: {
+			"id": "UC07z9r4VHsH1mIsWFpc0AVw", 
+			"type": [
+				"Sociologie"
+			]
+		}, 
+
+		"Tistrya"			: {
+			"id": "UChcIFyud8lRlBqJtjBQKuFA", 
+			"type": [
+				"Philosophie"
+			]
+		}, 
+
+		"Professeur Sims"			: {
+			"id": "UC8KD_PsFqubYcfOSnu_UYAA", 
+			"type": [
+				"Science"
+			]
+		}, 
+
+		"ProfOkita"			: {
+			"id": "UC2qLXSbTeNI3bHkfrHGvn1g", 
+			"type": [
+				"Science"
+			]
+		}, 
+
+		"Stupid Economics"			: {
+			"id": "UCyJDHgrsUKuWLe05GvC2lng", 
+			"type": [
+				"Économie"
+			]
+		}, 
+
+		"La Tronche en biais"			: {
+			"id": "UCq-8pBMM3I40QlrhM9ExXJQ", 
+			"type": [
+				"Esprit critique"
+			]
+		}, 
+
+		"Lanterne Cosmique"			: {
+			"id": "UCWYxQt9Y3y2CDzXLf2K7xCA", 
+			"type": [
+				"Esprit critique"
+			]
+		}
+	}
+}

@@ -42,11 +42,26 @@ function verificationLTA($lta) {
         return false;
 }
 
+function selectall() {
+    //var status = this.checked; // "select all" checked status
+    $('.checkbox').each(function(){ //iterate all listed checkbox items
+        this.checked = true; //change ".checkbox" checked status
+    });
+}
+
+function deselectall() {
+    //var status = this.checked; // "select all" checked status
+    $('.checkbox').each(function(){ //iterate all listed checkbox items
+        this.checked = false; //change ".checkbox" checked status
+    });
+};
+
+
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
 $(function () {
     $('[data-toggle="popover"]').popover({
             html: true
     });
-})
+});

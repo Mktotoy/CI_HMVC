@@ -17,7 +17,7 @@ class Template
     public function __construct()
     {
         $this->CI = get_instance();
-        $this->theme = 'default';
+        $this->theme = 'gentelella';
         $this->var['contenu'] = "";
     }
 
@@ -86,7 +86,7 @@ class Template
 
     public function set_theme($theme)
     {
-        if(is_string($theme) AND !empty($theme) AND file_exists('./application/themes/' . $theme . '/template.php'))
+        if(is_string($theme) AND !empty($theme) AND file_exists('./application/views/themes/' . $theme . '/template.php'))
         {
             $this->theme = $theme;
             return true;

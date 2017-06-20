@@ -16,6 +16,9 @@
     <meta name="description" content="">
     <meta name="author" content="<?php echo ""; ?>">
     <meta http-equiv="Content-Type" content="text/html; charset=<?php echo $charset; ?>" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo css_url('css/template/metisMenu.min'); ?>" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo css_url('css/template/sbadmin2'); ?>" />
+
     <?php foreach($css as $url): ?>
         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $url; ?>" />
     <?php endforeach; ?>
@@ -65,6 +68,8 @@
 </div>
 <footer></footer>
 
+<script src="<?php echo js_url('js/metisMenu.min'); ?>"></script>
+<script src="<?php echo js_url('js/sb-admin-2'); ?>"></script>
 
 <?php foreach($js as $url): ?>
     <script type="text/javascript" src="<?php echo $url; ?>"></script>
